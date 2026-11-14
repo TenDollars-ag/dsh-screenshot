@@ -16,17 +16,23 @@ A screenshot button for the [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 ## Install
 
-The desktop app is Windows-only for this plugin: capture runs a PowerShell helper using `System.Drawing` and `user32.dll`.
+Windows only: capture runs a PowerShell helper using `System.Drawing` and `user32.dll`.
 
-1. Copy this folder to a fixed local location, for example `D:\Plugins\dsh-screenshot`. Do **not** install from a removable drive: `link:` installs reference the source path, and unplugging the drive breaks the plugin.
-2. Install it into a profile:
+Installing from this repository takes one command:
 
-   ```powershell
-   dsh plugin --profile desktop add "link:D:\Plugins\dsh-screenshot"
-   ```
+```powershell
+dsh plugin --profile desktop add "github:TenDollars-ag/dsh-screenshot#v0.26.1"
+```
 
-   Or use **Settings → Plugins → Add plugin → local directory**.
-3. Restart DSH once (the Host route registers at boot), then refresh the page (the Client button loads with the page).
+Or copy the folder to a fixed local location and link it. Do **not** install from a removable drive: `link:` installs reference the source path, and unplugging the drive breaks the plugin.
+
+```powershell
+dsh plugin --profile desktop add "link:D:\Plugins\dsh-screenshot"
+```
+
+**Settings → Plugins → Add plugin → local directory** does the same thing without a terminal.
+
+Either way, restart DSH once (the Host route registers at boot), then refresh the page (the Client button loads with the page).
 
 ## Usage
 

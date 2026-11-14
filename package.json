@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-screenshot",
-  "version": "1.0.0",
-  "private": true,
+  "name": "@tendollars-ag/dsh-screenshot",
+  "version": "0.26.1",
   "type": "module",
   "description": "Screenshot button beside the message composer.",
   "exports": {
