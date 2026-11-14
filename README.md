@@ -18,10 +18,14 @@ A screenshot button for the [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 Windows only: capture runs a PowerShell helper using `System.Drawing` and `user32.dll`.
 
-Installing from this repository takes one command:
+Installing from source takes one command — either mirror works:
 
 ```powershell
+# GitHub
 dsh plugin --profile desktop add "github:TenDollars-ag/dsh-screenshot#v0.26.1"
+
+# Gitee (mainland China)
+dsh plugin --profile desktop add "https://gitee.com/Adachisakura1019/dsh-screenshot.git#v0.26.1"
 ```
 
 Or copy the folder to a fixed local location and link it. Do **not** install from a removable drive: `link:` installs reference the source path, and unplugging the drive breaks the plugin.
