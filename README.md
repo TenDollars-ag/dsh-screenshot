@@ -4,6 +4,8 @@ A screenshot button for the [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 输入框旁的截图按钮：截取整个屏幕或指定窗口，存成 PNG 并复制到剪贴板，按 `Ctrl+V` 直接粘贴成附件。
 
+![The capture-target menu listing the whole screen and every open window](docs/preview.png)
+
 ## Features
 
 - **Target picker** — one menu lists the whole screen plus every open window (title, process, size).
