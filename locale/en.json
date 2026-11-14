@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Screenshot button",
+    "description": "Adds a camera button beside the message composer that captures the whole screen or one chosen window and copies it to the clipboard for pasting as an attachment.",
+    "detail": "docs/DETAIL.md"
+  }
+}
