@@ -210,12 +210,18 @@ window.__ModuleLoader__.load({
 
       let menu = null
       if (open) {
-        const style = { left: 0, top: 0 }
+        const style = { left: 0 }
         if (anchor) {
           const maxLeft = Math.max(8, window.innerWidth - 328)
           style.left = Math.max(8, Math.min(anchor.left, maxLeft))
-          const below = anchor.bottom + 6
-          style.top = below + 320 > window.innerHeight ? Math.max(8, anchor.top - 326) : below
+          // Anchor by the edge the panel grows away from, so the panel never
+          // overlaps the button no matter how tall its content is.
+          const spaceBelow = window.innerHeight - anchor.bottom
+          if (spaceBelow >= 348 || spaceBelow >= anchor.top) {
+            style.top = anchor.bottom + 8
+          } else {
+            style.bottom = window.innerHeight - anchor.top + 8
+          }
         }
         const rows = []
         rows.push(h('div', { className: 'dss-menu-head', key: 'head' }, t('choose')))
