@@ -74,6 +74,13 @@ POST /dsh-screenshot/capture   { "mode": "screen" | "window", "hwnd": number }
 | `docs/DETAIL.md` | Detail page shown in Plugin Manager |
 | `assets/` | Cropped bitmap pill artwork, currently unused |
 
+## Mirrors
+
+Both mirrors carry the same history and tags:
+
+- GitHub — <https://github.com/TenDollars-ag/dsh-screenshot>
+- Gitee（国内更快）— <https://gitee.com/Adachisakura1019/dsh-screenshot>
+
 ## License
 
 MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Adachi.
